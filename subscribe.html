@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blogpost, writing, articles">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>JB | Weekly Subscription</title>
+    <link rel="stylesheet" href="./judith-blogpost.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b206c9f766.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="top-nav">
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="./images/judith-blog-logo.png" alt="Judith BlogPost Logo"></a>
+            </div>
+
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="technology.html">Tech</a></li>
+                    <li><a href="arts.html">Arts</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="science.html">Science</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <form onsubmit="return myFunction()" action="./subscription-success.html" class="subscription-form">
+            <div class="subscription-wrapper">
+                <p><strong>We're Happy To Send You Interesting Articles Weekly</strong></p>
+                <br>
+                <label for="name"><b>First Name</b></label><br>
+                <input type="text" id="name" placeholder="Enter Your Name"><p id="error-name">Enter Your Name</p><br>
+
+                <label for="phone"><b>Phone Number</b></label><br>
+                <input type="tel" id="phone" placeholder="Enter Your Phone Number"><p id="error-phone">Enter Your Phone Number</p><br>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" id="email" placeholder="Enter Your Email"><p id="error-email">Enter Your Email</p><br>
+
+                <button type="submit" id="subscribe-btn">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <footer class="footer">
+            <div class="socials">
+                <h3>Connect with us on social media</h3>
+                <div class="fb">
+                    <a href="#"><i class="fab fa-facebook"></i><br>
+                Facebook</a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="fab fa-twitter"></i><br>
+                Twitter</a>
+                </div>
+                
+                <div>
+                    <a href="#"><i class="fab fa-instagram"></i><br>
+                Instagram</a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="fab fa-linkedin"></i><br>
+                LinkedIn</a>
+            </div>
+            <br>
+            <div class="feedback">
+                <label for="message">Send Us A Feedback</label><br>
+                <textarea name="message" id="message"></textarea><br>
+                <input type="submit" name="message" id="submit"  onclick="myFunction2()">
+            </div>
+            <br>
+                <div class="copyright">
+                    <p>Shenkoya Babajide Oluwasegun (SBOJ Designs&reg;)</p>
+                    <p><span>Tel:</span> (+234)8069200144 &nbsp;&nbsp;| &nbsp;&nbsp;<span>Email:</span> shenkoyababajide@gmail.com</p>
+                    <p class="copy-right">copyright &copy; 2020</p>
+                </div>
+        </footer>
+    </div>
+    <script src="judith.js"></script>
+</body>
+</html>

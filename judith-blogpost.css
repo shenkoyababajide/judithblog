@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(250, 241, 229);
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+hr{
+    width: 60%;
+    margin: 20px auto;
+
+}
+
+.top-nav{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 3px 5px grey;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-color: orange;
+}
+.logo img{
+    width: 100px;
+    padding: 8px 0px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 7px;
+}
+
+.nav-bar li{
+    padding: 10px 0px;
+    margin-top: -3px;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: orange;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.nav-bar li a.active{
+    color: white;
+    background-color: orange;
+}
+
+.nav-bar li a:hover{
+    color: white;
+    background-color: orange;
+}
+
+.hero-banner{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(245, 224, 186);
+    text-align: center;
+}
+
+.homepage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-banner h1{
+    color: black;
+    font-size: 40px;
+    padding: 100px 0px 30px 0px;
+}
+
+.homepage-wrapper{
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.homepage-wrapper h1{
+    text-align: center;
+    padding: 150px 0px 30px 0px;
+}
+
+.hero-banner blockquote{
+    text-shadow: 2px 2px 3px orange;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+.hero-banner p{
+    font-size: 14px;
+    margin-top: 30px;
+}
+.subscribe-btn{
+    display: block;
+    margin: auto;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-color: orange;
+}
+
+.subscribe-btn a{
+text-decoration: none;
+color: black;
+}
+
+.subscribe-btn:hover{
+    box-shadow: 2px 2px 4px black;
+}
+
+.article{
+    text-align: justify;
+    line-height: 26px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.main-article{
+    padding: 20px;
+}
+
+.article h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.about-judith{
+    text-align: justify;
+    line-height: 26px;
+}
+
+.about-judith h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.about-judith a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 0px 2px 0px;
+}
+
+.sboj-btn{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sboj-btn a{
+    text-decoration: none;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 2px rgb(73, 87, 87);
+}
+
+.sboj-btn a:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials h3{
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    color: orange;
+}
+.socials div{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.socials a{
+text-decoration: none;
+color: orange;
+}
+
+.feedback{
+    display: block;
+}
+
+#message{
+    width: 100%;
+}
+
+#submit{
+    background-color: orange;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.copyright{
+    color: orange;
+}
+
+.subscription-form{
+    margin: 75px auto 25px auto;
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px grey;
+}
+
+.subscription-wrapper{
+    margin: 15px;
+    text-align: center;
+}
+
+.subscription-wrapper p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subscription-wrapper label{
+    font-size: 14px;
+}
+
+.subscription-wrapper input{
+    height: 30px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: orange;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subscription-wrapper input:focus{
+    background-color: black;
+}
+
+#subscribe-btn{
+    width: 150px;
+    margin: 20px auto;
+    height: 30px;
+    background-color: black;
+    color: orange;
+    border-radius: 5px;
+}
+
+#error-name, #error-phone, #error-email{
+    color: red;
+    visibility: hidden;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0;
+}
+
+.success-message{
+    background-color: grey;
+    width: 80%;
+    height: 300px;
+    color: orange;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10%;
+    font-size: 12px;
+    box-shadow: 3px 3px 9px black;
+}
+
+.bthp{
+    margin-top: 55px;
+}
+
+@media only screen and (min-width: 360px){
+    .homepage-wrapper h1{
+        text-align: center;
+        padding: 230px 0px 30px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+        .container{
+            width: 80%;
+        }
+        .subscription-form{
+            width: 50%;
+        }
+
+        .success-message{
+            width: 50%;
+        }
+
+        .nav-bar li a{
+            font-size: 16px;
+            padding: 10px 10px;
+        }
+
+        .subscribe-btn{
+            padding: 10px;
+            margin-top: 50px;
+            font-size: 16px;
+            background-color: orange;
+        }
+}
+
+@media only screen and (min-width: 1024px){
+    .container{
+        width: 80%;
+    }
+    
+    .subscription-form{
+        width: 40%;
+    }
+
+    .success-message{
+        width: 35%;
+    }
+
+    .nav-bar li a{
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .subscribe-btn{
+        padding: 10px;
+        margin-top: 50px;
+        font-size: 16px;
+        background-color: orange;
+    }
+}
